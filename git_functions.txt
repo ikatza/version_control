@@ -11,7 +11,13 @@ $ git log —-stat
 	# Shows all the commits and deletions + insertions per file
 
 $ git diff commit_id1 commit_id2
-	# same as diff without git
+	# compares changes in commit_id1 and commit_id2
+
+$ git diff 
+	# compares files in  working directory and staging area
+
+$ git diff —-staged
+	# compares files in staging area to last commit on reposotory
 
 $ git —-version
 	#Shows current version of git
@@ -36,3 +42,33 @@ $ git status
 
 $ git add filename
 	#Tracks the file so the commit includes it
+
+$ git commit
+	#using Atom as the git config —-global editor, this opens Atom to write and save 
+	#commits of the added files.
+
+$ git -m commit “message”
+	#Commits “message” into the added files. 
+
+$ git log —-graph —-oneline branch1 branch2
+	#Visualizes branch structure for commits in branch1 and branch2
+
+$ git branch
+	#Shows current branches (current in green and/or stared)
+
+$ git branch branch_name
+	# Creates branch called branch_name
+
+$ git checkout -b branch_name == git branch branch_name ; git checkout branch_name
+
+$ git show commit_id 
+	#does git diff of commit_id with its parent
+
+$ git merge branch1 branch2
+	#merges head commit of branch1 with the one of branch2, also merging the commit
+	#history timewise. They merge into the current branch.
+
+$ git branch -d branch_name
+	#deletes branch_name branch (only deletes the label)
+
+
