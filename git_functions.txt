@@ -7,6 +7,9 @@ $ git log
 	# Shows all the commits for the files in the repository and their corresponding
 	# commit id.
 
+$ git log -n X
+	# Shows the X last commits in the log
+
 $ git log —-stat
 	# Shows all the commits and deletions + insertions per file
 
