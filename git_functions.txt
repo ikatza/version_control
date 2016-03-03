@@ -1,0 +1,38 @@
+Guía de funciones y comandos para Git y GitHub 
+
+$ diff old_file new_file  
+	# Compares differences by line made in new_file vs old_file
+
+$ git log
+	# Shows all the commits for the files in the repository and their corresponding
+	# commit id.
+
+$ git log —-stat
+	# Shows all the commits and deletions + insertions per file
+
+$ git diff commit_id1 commit_id2
+	# same as diff without git
+
+$ git —-version
+	#Shows current version of git
+
+$ git config —-global
+	#Makes a change that affects ALL of the repositories using git
+
+$ git config —-global color.ui auto
+	#Changes diff insertions to green and deletions to red 
+
+$ git clone url
+	#Copies url’s repository to you directory
+
+HEAD #commit in which you’re currently on
+
+$ git checkout commit_id 
+	#Takes you to the commit_id version of a repository 
+
+$ git status
+	#Shows which files in the repository have changed since the last commit 
+	#Shows also current branch of the repository and current commit message
+
+$ git add filename
+	#Tracks the file so the commit includes it
