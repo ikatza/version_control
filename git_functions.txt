@@ -74,4 +74,21 @@ $ git merge branch1 branch2
 $ git branch -d branch_name
 	#deletes branch_name branch (only deletes the label)
 
+		### Starting with GitHub (online) commands! ###
+
+$ git remote
+	#a remote is a repository tracked via an url
+
+$git remote -v
+	# -v stands for verbose, it shows our remotes with more information, such as the 	# pushing and fetching urls
+
+$ git remote add origin url
+	#adds git’s url to a remote called origin (standard)
+
+$ git push remote_name branch_name
+	#sends committed changes from local branch_name to remote_name at the given url
+
+$ git pull remote_name branch_name
+	#sends committed changes from url’s remote_name to local branch_name 
+
 
