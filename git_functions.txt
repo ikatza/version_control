@@ -74,7 +74,16 @@ $ git branch -d branch_name
 $ git stash [list, show, apply, save, clear]
 	#saves your local modifications away and reverts the working directory to match 	#the HEAD commit.
 
-		### Starting with GitHub (online) commands! ###
+$ git reset —hard master~n
+	#resets current branch to n commits ago on master
+
+
+
+
+### Starting with GitHub (online) commands! ###
+
+
+
 
 $ git remote
 	#a remote is a repository tracked via an url
