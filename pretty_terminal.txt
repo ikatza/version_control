@@ -1,0 +1,14 @@
+Links and instructions to have a clearer command line related to git. 
+
+- Save  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash  in your home directory with the name git-completion.bash
+
+- Save  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh   in your home directory with the name git-prompt.sh
+
+- Copy the content of bash_profile_course into the .bash_profile file at HOME. 
+
+- Run the following commands at terminal
+
+$ git config --global push.default upstream
+$ git config --global merge.conflictstyle diff3
+
+- Restart terminal.
