@@ -1,5 +1,8 @@
 Guía de funciones y comandos para Git y GitHub 
 
+$ git \TAB \TAB
+	#Shows the options for the current state of command.
+
 $ diff old_file new_file  
 	# Compares differences by line made in new_file vs old_file
 
