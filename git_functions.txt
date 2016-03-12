@@ -31,9 +31,6 @@ $ git config —-global
 $ git config —-global color.ui auto
 	#Changes diff insertions to green and deletions to red 
 
-$ git clone url
-	#Copies url’s repository to you directory
-
 HEAD #commit in which you’re currently on
 
 $ git checkout commit_id 
@@ -74,10 +71,16 @@ $ git merge branch1 branch2
 $ git branch -d branch_name
 	#deletes branch_name branch (only deletes the label)
 
+$ git stash [list, show, apply, save, clear]
+	#saves your local modifications away and reverts the working directory to match 	#the HEAD commit.
+
 		### Starting with GitHub (online) commands! ###
 
 $ git remote
 	#a remote is a repository tracked via an url
+
+$ git clone url
+	#Copies url’s repository to you directory
 
 $git remote -v
 	# -v stands for verbose, it shows our remotes with more information, such as the 	# pushing and fetching urls
@@ -90,5 +93,13 @@ $ git push remote_name branch_name
 
 $ git pull remote_name branch_name
 	#sends committed changes from url’s remote_name to local branch_name 
+
+$ git fork url
+	#makes a clone of url in the GitHub servers to your account
+
+$ git fetch url
+	# makes a copy of the current repository at github to your local repository as a 	  different origin/master branch
+
+Obs: git pull == git fetch -> git merge 
 
 
